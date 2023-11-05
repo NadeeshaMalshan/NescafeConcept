@@ -1,0 +1,759 @@
+*
+    
+{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+   
+    
+    justify-content: center;
+    align-items: center;
+    
+}
+html,body {
+        position: relative;
+        height: 100%;
+      }
+
+nav{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.5cm;
+    display: flex;
+    font-family: 'DM Sans', sans-serif;
+    transition: 0.5s;
+    z-index: 100000;
+    
+}
+   
+
+    
+    
+
+
+nav.sticky{
+   
+    
+   
+    background: rgb(0, 0, 0);
+    
+   
+    
+}
+
+nav.sticky .links{
+    margin-left: 220px;
+    
+    
+}
+nav.sticky .nescafe_nav_logo{
+    width: 80px;
+    transition: 0.5s;
+}
+nav.sticky .btntext1{
+    margin: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.subdiv1{
+
+    text-align: center;
+    
+    
+    }
+
+    .nescafe_nav_logo{
+        width: 200px;
+        transition: 0.5s;
+    }
+    
+    
+
+
+
+
+
+
+
+
+.anc{
+    position: relative;
+    text-decoration: none;
+    color:rgba(255, 255, 255, 0.778);
+    letter-spacing: 0.5px;
+    margin-left: 30px;
+    font-size: 20px;
+    
+    
+}
+
+.anc:hover{
+    color:rgba(255, 255, 255, 0.885);
+}
+
+.anc:active{
+    color: #fff;
+}
+
+
+
+.anc:after {
+    content: "";
+    position:absolute;
+    background-color:  	#E6191E;
+    height: 3px;
+    width: 0px;
+    left: 0;
+    bottom:-10px;
+    transition: 0.3s;
+    
+}
+
+.anc:hover:after  ,.footerA:hover:after{
+    width: 100%;
+}
+
+
+
+
+.links{
+    display: inline;
+    margin-left: 100px;
+    font-family: 'Onest', sans-serif;
+    text-align: center;
+    
+   
+}
+
+
+
+.locationBtn{
+    margin-left: 100px;
+    border-radius: 10px 0px 25px 0px ;
+    background-color: 	#af1316;
+   
+    outline: none;
+    border-style:none;
+    cursor: pointer;
+    transition: 1s;
+
+}
+
+.locationBtn:hover{
+    border-radius: 25px 0px 10px 0px ;
+    background-color: white;
+}
+
+.btntext1{
+    color: white;
+    margin: 15px;
+
+font-size: 20px;
+transition: 1s;
+;
+
+
+}
+
+
+.btntext1:hover{
+    color: black;
+    transition: 1s;
+
+}
+
+.sec1, .sec2,.sec3{
+    min-height: 100vh;
+    display: flex;
+   
+
+    flex-direction: column;
+    overflow-x: hidden;
+
+
+}
+.sec1, .sec2 .sec4 .sec5{
+    justify-content: center;
+    align-items: center;
+}
+
+/**sec-1**/
+.sec1{
+   
+    background:linear-gradient(rgba(0, 0, 0, 0.326), rgba(0, 0, 0, 0)), url(res/homeimg.jpg) no-repeat;
+    
+    background-position:100%;
+background-size: cover;
+background-repeat: no-repeat;
+
+
+}
+
+.home_head{
+    color: white;
+    font-size: 60px;
+    font-family: "Nescafe Sans Bold";
+
+}
+.home_para{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.69);
+    text-align: center;
+    margin: 30px;
+    transition-delay: 0.2s;
+
+}
+
+
+.boxSpan{
+    display: block;
+    animation: spin_words 10s infinite;
+    text-align: left;
+    padding-left: 15px;
+    }
+    
+    @keyframes spin_words{
+    10%{
+      transform: translateY(-112%);
+    }
+    25%{
+      transform: translateY(-100%);
+    }
+    35%{
+      transform: translateY(-212%);
+    }
+    50%{
+      transform: translateY(-200%);
+    }
+    60%{
+      transform: translateY(-312%);
+    }
+    75%{
+      transform: translateY(-300%);
+    }
+    85%{
+      transform: translateY(-412%);
+    }
+    100%{
+      transform: translateY(-400%);
+    }
+    }
+    
+    .box{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding-top: 100px;
+    }
+    
+    .box span{
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-bottom :1px solid #fff;
+    border-right: 1px solid #fff;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+    }
+    
+    
+    .box span:nth-child(1){
+    animation-delay: -0.2s;
+    
+    }
+    .box span:nth-child(2){
+    animation-delay: -0.4s;
+    }
+    
+    @keyframes animate{
+    0%{
+      opacity: 0;
+      transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+      opacity: 1;
+    }
+    100%{
+      opacity: 0;
+      transform: rotate(45deg) translate(20px,20px);
+    }
+    }
+
+
+
+
+
+
+    /*- sec-2 -*/
+
+    .sec2{
+        padding: 100px;
+        margin-left:20px;
+        margin-right:20px;
+        
+        display: flex;
+        flex-direction: row;
+        
+        
+     }
+
+     .ourStoryDiv, .recipes{
+        text-align: center;
+        align-items: center;
+        border-radius: 20px 0 30px 0px;
+        padding-top: 90px;
+        padding-bottom: 90px;
+        padding-left: 20px;
+        padding-right: 20px;
+     
+       
+     }
+     
+    
+    .ourStoryDiv{
+        background: linear-gradient(rgba(0, 0, 0, 0.619), rgba(0, 0, 0, 0.466)), url(res/img3.jpg) no-repeat;
+        text-align: center;
+       background-size:cover;
+      
+       background-size: 750px;
+       
+        background-attachment:fixed;
+        padding-left: 100px;
+        padding-right: 100px;
+        background-position: 10%;
+        margin-right: 30px;
+        
+       
+        
+        
+    }
+
+    .recipes{
+        background: linear-gradient(rgba(0, 0, 0, 0.619), rgba(0, 0, 0, 0.466)),url(res/img5.jpg);
+        text-align: center;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: 50%;
+        margin-left: 30px;
+        background-size: 750px;
+        background-position: left;
+       
+        
+       
+        
+    }
+
+    .storyHeader{
+        font-size: 40px;
+        color: rgba(255, 255, 255, 0.848);
+        font-family: 'Titillium Web', sans-serif;
+
+    }
+    .storyP{
+        font-size: 20px;
+        color: rgba(255, 255, 255, 0.848);
+        font-family: 'Poppins', sans-serif;
+        transition-delay: 0.2s;
+
+
+    }
+
+    .mainBtn{
+    margin-top: 50px;
+   
+   border: 2px rgb(255, 255, 255);
+   background: transparent;
+   border-style: solid;
+   border-radius: 0px 0px 20px 0px;
+   
+    cursor: pointer;
+    transition: 0.5s;
+    }
+    .mainBtntext{
+        color: white;
+        padding: 12px;
+        transition: 0.5s;
+    }
+
+
+    .mainBtn:hover{
+        transition: 0.5s;
+        
+        background: #fff;
+        border-radius: 20px 0px 0px 0px;
+    }
+
+    .mainBtntext:hover{
+        color: rgb(0, 0, 0);
+        transition: 0.5s;
+    }
+
+    /*sec3*/
+
+    .sec3{
+        padding-top: 80px;
+        border-radius: 30px 0 0 0;
+       
+        background:linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(res/img11.png);
+         
+       
+          
+          
+        
+       
+        background-attachment: fixed;
+        background-size: cover;
+        overflow-y: hidden;
+    }
+
+    
+
+    .nsGold{
+            display: flex;
+          flex-direction: row;
+
+        
+        
+        
+    }
+    .nsClassic{
+              display: flex;
+          flex-direction: row;
+        
+       
+    }
+
+    .subOurBrands{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    
+    .nescafeGold, .nescafeClassic{
+       
+       overflow-y: hidden;
+       width: 75%;
+       
+       
+        
+    }
+
+   
+
+    .brandHead{
+        font-family: 'Titillium Web', sans-serif;
+        font-size:70px ;
+        color: rgba(0, 0, 0);
+        margin-top: 20px;
+      
+    }
+
+    
+
+    .brandP{
+        font-family: 'Poppins', sans-serif;
+        color: rgba(0, 0, 0);
+        font-size: 20px;
+        margin-top: 20px;
+        
+        
+       
+    }
+    .nsGold .brandP{
+        margin-right: 400px;
+    }
+    .nsClassic .brandP{
+        margin-left: 400px;
+    }
+
+    .nsClassic .brandHead{
+        text-align: right;
+    }
+
+    .normalPara{
+        color: rgba(0, 0, 0);
+        font-family: 'Titillium Web', sans-serif;
+        text-align: center;
+        letter-spacing: 4px;
+        font-size: 20px;
+        margin-top: 10px;
+       
+
+    }
+    .sec3 .mainBtn{
+        margin-left: 685px;
+        margin-right: 685px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        border-color: #000000;
+        
+        
+        
+    }
+    .sub3Bottom{
+        overflow-y: hidden;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+
+    .sec3 .mainBtn:hover{
+        background-color: #000000;
+    }
+    .sec3 .mainBtntext{
+        color: black;
+    }
+
+    .sec3 .mainBtntext:hover{
+        color: #fff;
+    }
+     /*sec4*/
+
+     .sec4{
+       
+        background: linear-gradient(rgba(0, 0, 0, 0.619), rgba(0, 0, 0, 0.267)), url(res/vid.gif) no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        padding-left: 30px;
+        padding-right: 30px;
+        
+        
+       
+       
+        min-height: 40vh;
+        max-height: 80vh;
+       
+        display: flex;
+       
+    
+        flex-direction: column;
+        overflow-x: hidden;
+       
+        overflow-y: hidden;
+        
+
+       
+
+     }
+     .sec4Content{
+        
+     }
+
+     
+
+     .mission{
+        display: flex;
+        overflow-y: hidden;
+        margin-left: 20px;
+        margin-top: 50px;
+        
+       
+     }
+
+     .nescafeSymble{
+        width: 50px;
+        overflow-y: hidden;
+        
+        
+     }
+
+     .missionP{
+        color: #fff;
+        font-family: 'Montserrat', sans-serif;
+        margin-top: 10px;
+        margin-left: 10px;
+        transition-delay: 0.25s;
+        overflow-y: hidden;
+        letter-spacing: 5px;
+     }
+
+     
+
+     .sec4para{
+        font-family: "Nescafe Sans Bold";
+        font-size: 45px;
+        color: #fff;
+        text-align: left;
+        margin-right: 750px;
+        margin-top: 10px;
+        overflow-y: hidden;
+        margin-bottom: 20px;
+        
+        
+     }
+
+     .sec4 .normalPara{
+        color: #ffffff91;
+        overflow-y: hidden;
+        text-align: left;
+        margin-right: 750px;
+    }
+
+    .sec4 .mainBtn{
+       
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
+        overflow-y: hidden;
+    }
+
+    /*sec5*/
+
+    .sec5{
+        background: black url(res/img15.png) no-repeat;
+        background-size: auto;
+        display: flex;
+        background-position: right;
+       
+        
+        overflow: hidden;
+       
+
+    flex-direction: column;
+    overflow-x: hidden;
+    justify-content: center;
+    }
+    
+    .nescafeLogo{
+      
+       
+      display: block;
+      margin: auto;
+      
+      width: 350px;
+
+    }
+
+    .sec5P{
+        font-family: 'Titillium Web', sans-serif;
+        color: #fff;
+        font-size: 20px;
+        text-align: center;
+        margin-top: -50px;
+       
+    }
+    .socialIcons{
+        color: #fff;
+        text-align: center;
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        
+    }
+    i{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .socialA{
+        color: #fff;
+        text-decoration: none;
+        animation: 0.2s;
+    }
+    i{
+        animation: 0.5s;
+        
+    }
+
+    
+    i:hover{
+        color: #959595;
+        transition: 0.5s;
+       
+        
+    }
+
+    
+   
+    /*footer*/
+    footer{
+        min-height: 30vh;
+        background: #040404;
+        padding: 50px 100px ;
+    }
+
+    
+
+    footer .nescafeSymble{
+        width: 20px;
+        margin-right:5px ;
+        
+        
+        
+     }
+
+    .footertext{
+        font-size: 17px;
+        font-family: 'Poppins', sans-serif;
+        color: #fff;
+        
+
+    }
+
+    .footerLinks{
+        padding-top: 40px;
+        display: flex;
+    }
+
+    .footerA{
+        color: #fff;
+        text-decoration: none;
+        position: relative;
+        margin-right: 30px;
+
+    }
+
+    .footerA:after{
+        content: "";
+        position:absolute;
+        background-color:  	#E6191E;
+        height: 3px;
+        width: 0px;
+        left: 0;
+        bottom:-10px;
+        transition: 0.3s;
+        
+    }
+        
+
+    /*------- custom scrollbar -------*/
+::-webkit-scrollbar{
+    width: 5px;
+    }
+    ::-webkit-scrollbar-track{
+    background:  transparent;
+    }
+    ::-webkit-scrollbar-thumb{
+    background: linear-gradient(#000000,
+    #a90505);
+    }
+
+    
+    
